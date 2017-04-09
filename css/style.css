@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 400;
+}
+
+.divide-page {
+    border: 0;
+    border-bottom: 4px solid;
+    color: #7d97ad;
+}
+
+.text-muted {
+    color: #7d97ad;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.text-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
