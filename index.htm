@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
@@ -14,27 +14,27 @@
 
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
+    <header class="row">
+        <div class="col-md-6 title-logo"><!-- Logo image -->
             <img class="title-logo" src="./statics/logo.png" alt="logo img">
-        </div><!-- Title and subtitle -->
-        <div class="col-md-6 text-right text-uppercase">
-            <h1 class="text-super text-thin">Jane Doette</h1>
-            <h4>Front-end Ninja</h4>
         </div>
-    </div>
+        <div class="col-md-6 text-right text-uppercase"><!-- Title and subtitle -->
+            <h1 class="text-super text-thin">Jane Doette</h1>
+            <h4 class="subtitle">Front-end Ninja</h4>
+        </div>
+    </header>
     <div class="row">
         <div class="col-md-12">
             <hr class="divide-page">
         </div>
     </div>
-    <div class="row"><!-- A large image at the middle of the page -->
+    <section class="row"><!-- A large image at the middle of the page -->
         <div class="col-md-12"><img src="./statics/main_image.png" class="img-responsive" alt="main image"></div>
-    </div>
+    </section>
     <div class="row">
         <div class="col-md-12"><h2 class="text-muted">Featured Work</h2></div>
     </div>
-    <div class="row text-center"><!-- Three projects showed -->
+    <section class="row text-center"><!-- Three projects showed -->
         <div class="col-md-4"><!-- Project 1 -->
             <img src="./statics/pro_1.png" class="img-responsive" alt="movies" data-toggle="modal" data-target="#modal_1">
             <h3>Movies</h3>
@@ -50,7 +50,10 @@
             <h3>Wow</h3>
             <p><a href="https://github.com/dmmjy9" target="blank">https://github.com/dmmjy9</a></p>
         </div>
-    </div>
+    </section>
+    <footer class="githubLink">
+        <p class="paraFooter">Welcome to my Github:<a href="https://github.com/dmmjy9">https://github.com/dmmjy9</a></p>
+    </footer>
 </div>
 
 
@@ -59,10 +62,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Movie Page</h4>
+                <h4 class="modal-title" id="myModalLabelItem1">Movie Page</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="./statics/pro_1.png">
+                <img class="img-responsive" src="./statics/pro_1.png" alt="movies">
                     This was my first project in this class. I learned python OOP then built a movie website.<br/>
                     You could click <a href="https://github.com/dmmjy9/movies" target="blank">here</a> to get source code.
             </div>
@@ -78,10 +81,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Portfolio Page</h4>
+                <h4 class="modal-title" id="myModalLabelItem2">Portfolio Page</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="./statics/pro_2.png">
+                <img class="img-responsive" src="./statics/pro_2.png" alt="portfolio">
                     This was my second project in this class. I learned a lot about HTML and CSS..<br/>
                     You could click <a href="https://github.com/dmmjy9/portfolio" target="blank">here</a> to get source code.
             </div>
@@ -97,10 +100,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Wow</h4>
+                <h4 class="modal-title" id="myModalLabelItem3">Wow</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="./statics/pro_3.png">
+                <img class="img-responsive" src="./statics/pro_3.png" alt="wow">
                     I donot know what is my third project, so wow here. And I will update here when finish the third project.<br/>
                     You could click <a href="https://github.com/dmmjy9" target="blank">here</a> to see my github and all of my code will uploaded.
             </div>
@@ -110,5 +113,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

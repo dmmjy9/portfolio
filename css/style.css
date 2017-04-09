@@ -25,3 +25,26 @@ body {
 .title-logo {
     margin-top: 20px;
 }
+
+.githubLink {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.paraFooter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 700px){
+    .title-logo {
+        width: 50px;
+        float: left;
+    }
+    .text-super {
+        font-size: 30px;
+    }
+    .title-logo {
+        display: none;
+    }
+}
