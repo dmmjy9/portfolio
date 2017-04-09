@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,7 +17,7 @@
     <div class="row">
         <div class="col-md-6">
             <img class="title-logo" src="./statics/logo.png" alt="logo img">
-        </div>
+        </div><!-- Title and subtitle -->
         <div class="col-md-6 text-right text-uppercase">
             <h1 class="text-super text-thin">Jane Doette</h1>
             <h4>Front-end Ninja</h4>
@@ -26,27 +28,66 @@
             <hr class="divide-page">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12"><img src="./statics/1140x350" class="img-responsive" alt="main image"></div>
+    <div class="row"><!-- A large image at the middle of the page -->
+        <div class="col-md-12"><img src="./statics/main_image.png" class="img-responsive" alt="main image"></div>
     </div>
     <div class="row">
         <div class="col-md-12"><h2 class="text-muted">Featured Work</h2></div>
     </div>
-    <div class="row text-center">
+    <div class="row text-center"><!-- Three projects showed -->
         <div class="col-md-4">
-            <img src="./statics/555x300" class="img-responsive" alt="Appify">
-            <h3>Appify</h3>
+            <img src="./statics/pro_1.png" class="img-responsive" alt="movies" data-toggle="modal" data-target="#modal_1">
+            <h3>Movies</h3>
             <p><a href="https://github.com/dmmjy9/movies">https://github.com/dmmjy9/movies</a></p>
         </div>
         <div class="col-md-4">
-            <img src="./statics/555x300" class="img-responsive" alt="Sunflower">
-            <h3>Sunflower</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
+            <img src="./statics/pro_2.png" class="img-responsive" alt="portfolio" data-toggle="modal" data-target="#modal_2">
+            <h3>Portfolio</h3>
+            <p><a href="https://github.com/dmmjy9/portfolio">https://github.com/dmmjy9/portfolio</a></p>
         </div>
         <div class="col-md-4">
             <img src="./statics/555x300" class="img-responsive" alt="Bokeh">
             <h3>Bokeh</h3>
             <p><a href="http://github.com/">Link to project</a></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal_1 movie project -->
+<div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Movie Page</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="./statics/pro_1.png">
+                    This was my first project in this class. I learned python OOP then built a movie website.<br/>
+                    You could click <a href="https://github.com/dmmjy9/movies">here</a> to get source code.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal_2 portfolio project -->
+<div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Portfolio Page</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="./statics/pro_2.png">
+                    This was my second project in this class. I learned a lot about HTML and CSS..<br/>
+                    You could click <a href="https://github.com/dmmjy9/portfolio">here</a> to get source code.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
